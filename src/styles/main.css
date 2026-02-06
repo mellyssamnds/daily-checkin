@@ -1,0 +1,220 @@
+* {
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont;
+}
+
+body {
+  margin: 0;
+  background: #121316; 
+  color: #8d9ec2; 
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  width: 100%;
+  max-width: 420px;
+  padding: 16px;
+}
+
+.card {
+  background: #01020a;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 10px 30px rgba(131, 103, 209, 0.4);
+}
+
+.hidden {
+  display: none;
+}
+
+h1, h2 {
+  text-align: center;
+}
+
+p {
+  text-align: center;
+  opacity: 0.85;
+}
+
+.actions {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  margin-top: 16px;
+}
+
+.btn {
+  padding: 10px 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  background: #2563eb;
+  color: white;
+  font-size: 14px;
+}
+
+.btn.big {
+  font-size: 32px;
+  padding: 16px 24px;
+}
+
+.btn.no {
+  background: #dc2626;
+}
+
+.btn.yes {
+  background: #16a34a;
+}
+
+.btn.google {
+  width: 100%;
+  background: hsl(0, 0%, 68%);
+}
+
+.btn.period {
+  font-size: 14px;
+}
+
+.divider {
+  text-align: center;
+  margin: 16px 0;
+  opacity: 0.5;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 8px;
+  border-radius: 8px;
+  border: none;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.link {
+  background: none;
+  border: none;
+  color: #60a5fa;
+  cursor: pointer;
+}
+
+.message {
+  text-align: center;
+  margin-top: 16px;
+  font-weight: 500;
+}
+
+/* AUTH CARD */
+
+.auth-card {
+  padding: 32px;
+}
+
+.auth-title {
+  margin-bottom: 24px;
+}
+
+/* GOOGLE BUTTON */
+
+.btn.full {
+  width: 100%;
+}
+
+.google {
+  background: #fff;
+  color: #111827;
+  border: 1px solid #e5e7eb;
+  font-weight: 500;
+}
+
+.google:hover {
+  background: #f9fafb;
+}
+
+.google-icon {
+  margin-right: 8px;
+  font-weight: bold;
+}
+
+/* DIVIDER */
+
+.divider {
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+  color: #9ca3af;
+}
+
+.divider::before,
+.divider::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: #1f2933;
+}
+
+.divider span {
+  padding: 0 12px;
+  font-size: 14px;
+}
+
+/* FORM */
+
+.form-group {
+  margin-bottom: 16px;
+}
+
+label {
+  font-size: 13px;
+  color: #d1d5db;
+}
+
+input {
+  margin-top: 6px;
+  background: #020617;
+  color: white;
+  border: 1px solid #1f2933;
+}
+
+input:focus {
+  outline: none;
+  border-color: #6366f1;
+}
+
+/* LABEL ROW */
+
+.label-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.link.small {
+  font-size: 12px;
+}
+
+/* PRIMARY BUTTON */
+
+.primary {
+  background: linear-gradient(90deg, #38356d, #6366f1);
+  font-weight: 600;
+}
+
+.primary:hover {
+  opacity: 0.95;
+}
+
+/* SWITCH AUTH */
+
+.switch-auth {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #9ca3af;
+}

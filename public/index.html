@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Baseball Bat Tracker ⚾</title>
+
+  <link rel="stylesheet" href="../src/styles/main.css" />
+</head>
+<body>
+
+  <main class="container">
+
+    <!-- LOGIN -->
+    <section id="auth-section" class="card auth-card">
+        <h1 class="auth-title">Bem-vindo</h1>
+
+    <button id="google-login" class="btn google full">
+        <span class="google-icon">G</span>
+        Entrar com Google
+    </button>
+
+    <div class="divider">
+        <span>OU</span>
+    </div>
+
+    <div class="form-group">
+        <label>Email</label>
+        <input type="email" id="email" placeholder="email@provedor.com" />
+    </div>
+
+    <div class="form-group">
+        <div class="label-row">
+            <label>Senha</label>
+            <button id="forgot-password" class="link small">
+                Esqueceu a senha?
+            </button>
+        </div>
+        <input type="password" id="password" placeholder="••••••••" />
+  </div>
+
+    <button id="email-login" class="btn full primary">
+        Sign In
+    </button>
+
+    <p class="switch-auth">
+        Não tem uma conta?
+        <button id="toggle-auth" class="link">Cadastre-se</button>
+    </p>
+    </section>
+
+
+    <!-- APP -->
+    <section id="app-section" class="card hidden">
+      <header class="header">
+        <span id="user-name"></span>
+        <button id="logout" class="link">Sair</button>
+      </header>
+
+      <h2>O baseball bat subiu hoje?</h2>
+
+      <div class="actions">
+        <button class="btn big no">❌</button>
+        <button class="btn big yes">✅</button>
+      </div>
+
+      <!-- PERÍODO -->
+      <div id="period-section" class="hidden">
+        <p>Em qual período?</p>
+        <div class="actions">
+          <button class="btn period">Manhã 🌅</button>
+          <button class="btn period">Tarde 🌇</button>
+          <button class="btn period">Noite 🌙</button>
+        </div>
+      </div>
+
+      <p id="message" class="message"></p>
+    </section>
+
+  </main>
+
+  <script src="../src/main.js"></script>
+</body>
+</html>
